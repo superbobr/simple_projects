@@ -14,7 +14,7 @@ class PhoneBook:
         self.contacts[user] = phone_number
 
     def get(self, user):
-        print(self.contacts.get(user), 'Контакт не найден')
+        print(self.contacts.get(user, 'Контакт не найден'))
 
     def delete(self, user):
         del self.contacts[user]
