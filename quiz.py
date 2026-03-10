@@ -11,5 +11,4 @@ with open('quiz.txt', 'w+', encoding='utf-8') as file:
         answer = input(f'{temp[0]}?\n')
         if answer.strip().lower() == temp[1].strip().lower():
             result += 1
-
     print(f'Ваш счет: {result}')
