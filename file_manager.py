@@ -6,13 +6,10 @@ class FileManager:
         self.file_list = []
         with open('file1.txt', 'a', encoding='utf-8') as f:
             self.file_list.append('file1.txt')
-            f.close()
         with open('file2.txt', 'a', encoding='utf-8') as f:
             self.file_list.append('file2.txt')
-            f.close()
         with open('file3.log', 'a', encoding='utf-8') as f:
             self.file_list.append('file3.log')
-            f.close()
 
     def write(self, file, data):
         with open(file, 'a', encoding='utf-8') as f:
